@@ -1,5 +1,5 @@
 ### Description
-Auto-Sync plugin.
+Auto-Sync plugin.  
 Syncs player every 10 minutes (default). Users with a slow device or internet can opt-out of the autosync by doing `/async` in-game.
 
 ### Downloading a Jar
@@ -18,7 +18,7 @@ Note: Highly recommended to use Java 8.
 
 ### Installing
 
-Simply place the output jar from the step above in your server's `config/mods` directory and restart the server.
+Simply place the output jar from the step above in your server's `config/mods` directory and restart the server.  
 List your currently installed plugins/mods by running the `mods` command.
 
 ### Configuration and Info
@@ -29,5 +29,5 @@ This is so the async list and settings are applied to all servers, *if* hosted o
 To edit settings, use the server-commands provided.
 
 ### Contact
-Discord: L0615T1C4L.N16HTM4R3#6238
+Discord: L0615T1C4L.N16HTM4R3#6238  
 Discord-Server: [join](http://cn-discord.ddns.net )
