@@ -28,7 +28,7 @@ Files are stored in your system. (`C:\users\user\mind_db\async.cn / /home/user/m
 This is so the async list and settings are applied to all servers, *if* hosted on the same machine/instance/account.  
 
 To edit settings, use the server-commands provided.  
-[core-cn](https://github.com/L0615T1C5-216AC-9437/core-cn) is reccommended in order view and edit settings.
+[core-cn](https://github.com/L0615T1C5-216AC-9437/core-cn) is recommended in order view and edit settings.
 
 ### Contact
 Discord: L0615T1C4L.N16HTM4R3#6238  
