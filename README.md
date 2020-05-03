@@ -5,7 +5,7 @@ Syncs player every 10 minutes (default). Users with a slow device or internet ca
 
 ### Downloading a Jar
 1) go to [releases](https://github.com/L0615T1C5-216AC-9437/async-cn/releases) and download latest version, (not recommended to use alpha)
-2) follow #Installing
+2) follow [#Installing](https://github.com/L0615T1C5-216AC-9437/async-cn/blob/master/README.md#installing)
 
 ### Building a Jar
 
