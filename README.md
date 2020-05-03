@@ -1,3 +1,4 @@
+![Java CI](https://github.com/L0615T1C5-216AC-9437/async-cn/workflows/Java%20CI/badge.svg)
 ### Description
 Auto-Sync plugin.  
 Syncs player every 10 minutes (default). Users with a slow device or internet can opt-out of the autosync by doing `/async` in-game.
