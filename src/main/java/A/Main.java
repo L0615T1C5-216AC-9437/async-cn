@@ -3,6 +3,7 @@ package A;
 import arc.Events;
 import arc.util.CommandHandler;
 import arc.util.Log;
+import arc.util.Strings;
 import mindustry.entities.type.Player;
 import mindustry.game.EventType;
 import mindustry.plugin.Plugin;
@@ -62,6 +63,27 @@ public class Main extends Plugin {
             list.put("uuid3","");
             data.put("list", list);
             if (byteCode.save("async", data) != null) Log.info("Successfully created " + System.getProperty("user.home") + "/mind_db/async.cn");
+        });
+        handler.register("async-timer", "[ever-x-minutes]", "Changes how often Auto-Sync", arg -> {
+            if (arg.length == 0) {
+                if (byteCode.has("async")) {
+                    data = byteCode.get("async");
+                    if (data.has("timer")) {
+                        Log.info("timer set to every " + data.getInt("timer") + " minutes.");
+                    } else {
+                        Log.err("async.cn does not contain key `timer`");
+                    }
+                }
+            } else {
+                if (byteCode.has("async")) {
+                    data = byteCode.get("async");
+                    if (Strings.canParseInt(arg[0])) {
+                        byteCode.putInt("async", "timer", Strings.parseInt(arg[0]));
+                    } else {
+                        Log.err("Value must be a integer!");
+                    }
+                }
+            }
         });
     }
     public void registerClientCommands(CommandHandler handler) {
