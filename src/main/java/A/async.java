@@ -14,6 +14,7 @@ import static mindustry.Vars.playerGroup;
 public class async extends Thread {
     private Thread MainT;
     private JSONObject data = new JSONObject();
+    private JSONObject list = new JSONObject();
 
     public async(Thread main) {
         MainT = main;
@@ -53,8 +54,14 @@ public class async extends Thread {
                 }
             }
             ///sleep
+            if (byteCode.has("async")) {
+                data = byteCode.get("async");
+                if (data.has("list")) {
+                    list = data.getJSONObject("list");
+                }
+            }
             for (Player p : Vars.playerGroup.all()) {
-                if (data.has(p.uuid)) continue;
+                if (list.has(p.uuid)) continue;
                 Call.onWorldDataBegin(p.con);
                 netServer.sendWorldData(p);
                 Call.onInfoToast(p.con, "Auto-Sync completed.", 5);
