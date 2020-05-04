@@ -4,7 +4,7 @@ Auto-Sync plugin.
 Syncs player every 10 minutes (default). Users with a slow device or internet can opt-out of the autosync by doing `/async` in-game.
 
 ### Downloading a Jar
-1) go to [releases](https://github.com/L0615T1C5-216AC-9437/async-cn/releases) and download latest version, (not recommended to use alpha)
+1) go to [releases](https://github.com/L0615T1C5-216AC-9437/async-cn/releases) and download latest version, (not recommended to use pre-releases)
 2) follow [#Installing](https://github.com/L0615T1C5-216AC-9437/async-cn/blob/master/README.md#installing)
 
 ### Building a Jar
